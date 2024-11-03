@@ -125,7 +125,8 @@ we need to edit the tomcat-users.xml to configure the users. The "tomcat-users.x
 <role rolename="manager-gui" />
 <user username="tomcat" password="tomcat" roles="manager-gui" />
 <role rolename="admin-gui" />
-<user username="admin" password="admin" roles="manager-gui,admin-gui"/>
+<role rolename="manager-script" />
+<user username="admin" password="admin" roles="manager-gui,admin-gui,manager-script" />
 
 cd bin
 ./shutdown.sh
